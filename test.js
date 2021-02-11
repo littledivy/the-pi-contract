@@ -1,4 +1,4 @@
-import { handle } from "./index.js";
+import { handle } from "./contract.js";
 import assert from "assert";
 
 let state = {};

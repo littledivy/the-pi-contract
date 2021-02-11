@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>The Pi Contract</title>
+</head>
+<body>
+    <p>Pi = <strong id="pi">Loading...</strong></p>
+    <small>Interactions = <strong id="i">Loading...</strong></small>
+</body>
+<script type="module">
+import { readContract } from "https://esm.sh/smartweave";
+import Arweave from "https://esm.sh/arweave";
+
+let client = Arweave.init({
+    host: 'arweave.net',
+    port: 443,
+    protocol: 'https',
+    timeout: 20000,
+    logging: false,
+});
+
+readContract(client, "Zwp7r7Z10O0TuF6lmFApB7m5lJIrE5RbLAVWg_WKNcU").then(state => {
+    window.document.getElementById("pi").innerHTML = state.pi;
+    window.document.getElementById("i").innerHTML = state.i;
+});
+</script>
+</html>
