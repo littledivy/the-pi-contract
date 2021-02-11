@@ -8,5 +8,9 @@
     "test": "node test.js"
   },
   "author": "littledivy",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "arweave": "^1.10.6",
+    "smartweave": "^0.4.25"
+  }
 }

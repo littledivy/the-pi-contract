@@ -25,7 +25,7 @@ let client = Arweave.init({
 
 readContract(client, "Zwp7r7Z10O0TuF6lmFApB7m5lJIrE5RbLAVWg_WKNcU").then(state => {
     window.document.getElementById("pi").innerHTML = state.pi;
-    window.document.getElementById("i").innerHTML = state.i;
+    window.document.getElementById("i").innerHTML = (state.i + 3) / 4;
 });
 </script>
 </html>
