@@ -6,5 +6,7 @@ Every contract iteraction makes it precise.
 state.pi // current computed value of Pi
 ```
 
+**View current contract state here: https://littledivy.github.io/the-pi-contract**
+
 Limitation: It's JavaScript, mate. Floating point precision is...[bad](https://www.codemag.com/Article/1811041/JavaScript-Corner-Math-and-the-Pitfalls-of-Floating-Point-Numbers).
 
