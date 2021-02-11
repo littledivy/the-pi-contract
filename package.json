@@ -1,0 +1,12 @@
+{
+  "name": "the-pi-contract",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A smart contract to compute Math.Pi using Gregory-Leibniz series.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "littledivy",
+  "license": "MIT"
+}
